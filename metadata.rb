@@ -4,7 +4,7 @@ maintainer_email "lusis.org+github.com@gmail.com"
 license          "Apache 2.0"
 description      "Installs/Configures logstash"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          "0.6.1001"
+version          "0.6.1002"
 
 %w{ ubuntu debian redhat centos scientific amazon fedora }.each do |os|
   supports os
@@ -14,6 +14,6 @@ end
   depends ckbk
 end
 
-%w{ yumrepo apt }.each do |ckbk|
+%w{ yum-corporate apt }.each do |ckbk|
   recommends ckbk
 end
